@@ -23,7 +23,7 @@ configure_file (
 
 # package
 add_executable (${project_name} "symmetrytool.cpp")
-set_property (TARGET ${project_name} PROPERTY CXX_STANDARD 14)
+set_property (TARGET ${project_name} PROPERTY CXX_STANDARD 17)
 
 include_directories (
     ${IMATH_INCLUDE_DIRS}
