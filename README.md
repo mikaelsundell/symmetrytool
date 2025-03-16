@@ -10,26 +10,6 @@ Symmetrytool is a utility for exploring the math of symmetry in art and design.
 
 ![Sample image or figure.](images/image.png 'symmetrytool')
 
-Building
---------
-
-The symmetrytool app can be built both from commandline or using optional Xcode `-GXcode`.
-
-```shell
-mkdir build
-cd build
-cmake .. -DCMAKE_MODULE_PATH=<path>/modules -GXcode
-cmake --build . --config Release -j 8
-```
-
-**Example using 3rdparty on arm64 with Xcode**
-
-```shell
-mkdir build
-cd build
-cmake ..
-cmake .. -DCMAKE_MODULE_PATH=<path>/modules -DCMAKE_PREFIX_PATH=<path>/3rdparty/build/macosx/arm64.debug -GXcode
-```
 
 Usage
 -----
@@ -57,32 +37,44 @@ Output flags:
     --outputfile OUTPUTFILE    Set output file
 ```
 
-**Input flags**
-
-The input flags are used to set-up the symmetry geometry. 
-
-```--centerpoint``` centerpoint cross added to the center of the aspect ratio geometry   
-```--symmetrygrid ``` symmetry grid inside aspect ratio geometry    
-```--label ``` label for width, heigh, aspect ratio and scale   
-```--scale ``` scale of aspect ratio geometry  
-```--color ``` color of geometry   
-```--size ``` size of image   
-
-**Output flags**
-
-```--outputfile``` symmetry output file
-
-
-Example symmetry image
+Generate aspect ratio 1.5 symmetry grid  in OpenEXR float
 --------
 
 ```shell
-./symmetrytool
---symmetrygrid
---aspectratio 2.35 
---outputfile symmetry.png 
---size "2350,1000" 
---scale 0.8 
+./symmetrytool --aspectratio 1.5 --outputfile ./symmetrytool_1.5.png --symmetrygrid --centerpoint --size 1500,1000 -v -d --scale 1
+```
+
+Download symmetry grids for aspectratios charts
+-------------
+
+LogC charts are available EXR float and DPX 10-bit precision, EI 800.
+
+
+| Aspect ratio     | Output type | Download
+| ----------- | ----------- | ----------- |
+| 1.5 | ```./symmetrytool --aspectratio 1.5 --outputfile ./symmetrytool_1.5.png --symmetrygrid --centerpoint --size 1500,1000 -v -d --scale 1```  | x1.5 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_1.78.png) |
+
+
+
+Building
+--------
+
+The symmetrytool app can be built both from commandline or using optional Xcode `-GXcode`.
+
+```shell
+mkdir build
+cd build
+cmake .. -DCMAKE_MODULE_PATH=<path>/modules -GXcode
+cmake --build . --config Release -j 8
+```
+
+**Example using 3rdparty on arm64 with Xcode**
+
+```shell
+mkdir build
+cd build
+cmake ..
+cmake .. -DCMAKE_MODULE_PATH=<path>/modules -DCMAKE_PREFIX_PATH=<path>/3rdparty/build/macosx/arm64.debug -GXcode
 ```
 
 Download
