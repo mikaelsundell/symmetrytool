@@ -52,9 +52,12 @@ LogC charts are available EXR float and DPX 10-bit precision, EI 800.
 
 | Aspect ratio     | Output type | Download
 | ----------- | ----------- | ----------- |
-| 1.5 | ```./symmetrytool --aspectratio 1.5 --outputfile ./symmetrytool_1.5.png --symmetrygrid --centerpoint --size 1500,1000 -v -d --scale 1```  | x1.5 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_1.78.png) |
-
-
+| 1.5 | ```./symmetrytool --aspectratio 1.5 --outputfile ./symmetrytool_1.5.png --symmetrygrid --centerpoint --size 1500,1000 -v -d --scale 1```  | x1.5 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_1.5.png) |
+| 1.78 | ```./symmetrytool --aspectratio 1.78 --outputfile ./symmetrytool_1.78.png --symmetrygrid --centerpoint --size 1780,1000 -v -d --scale 1```  | x1.78 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_1.78.png) |
+| 1.85 | ```./symmetrytool --aspectratio 1.85 --outputfile ./symmetrytool_1.85.png --symmetrygrid --centerpoint --size 1850,1000 -v -d --scale 1```  | x1.85 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_1.85.png) |
+| 2.20 | ```./symmetrytool --aspectratio 2.20 --outputfile ./symmetrytool_2.20.png --symmetrygrid --centerpoint --size 2200,1000 -v -d --scale 1```  | x2.20 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_2.20.png) |
+| 2.35 | ```./symmetrytool --aspectratio 2.35 --outputfile ./symmetrytool_2.35.png --symmetrygrid --centerpoint --size 2350,1000 -v -d --scale 1```  | x2.35 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_2.35.png) |
+| 2.39 | ```./symmetrytool --aspectratio 2.39 --outputfile ./symmetrytool_2.39.png --symmetrygrid --centerpoint --size 2390,1000 -v -d --scale 1```  | x2.39 [PNG](https://mikaelsundell.s3.eu-west-1.amazonaws.com/github/symmetrytool/symmetrytool_2.35.png) |
 
 Building
 --------
