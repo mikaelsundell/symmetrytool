@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # define common photo and film aspect ratios
-aspect_ratios=("1.33" "1.5" "1.77" "1.85" "2.35" "2.39")
+aspect_ratios=("1.33" "1.5" "1.77" "1.85" "2.0" "2.2" "2.35" "2.39")
 
 # loop through the aspect ratios and run symmetrytool for each
 for ar in "${aspect_ratios[@]}"; do
